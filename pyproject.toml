@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "poetry-core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "nickelmod"
+version = "0.1.0"
+description = ""
+authors = [ "Aria Taylor <ari@aricodes.net>",]
+
+[tool.black]
+line-length = 95
+target-version = [ "py39",]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+hy = "^0.20.0"
+funcparserlib = "1.0.0a0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^4.0.1"
+flake8-black = "^0.2.4"
+black = "^22.1.0"
